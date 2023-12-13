@@ -62,7 +62,7 @@ public class Main {
     	
 //    	Calculate the performance rate
     	int totalPerformance = 30 * noOfPerformace;
-    	double performanceRate = ((totalPerformanceScore/totalPerformance)+50) * 0.20;
+    	double performanceRate = ((totalPerformanceScore/totalPerformance)+50) * 0.30;
     	
     	
 //    	Exam score
@@ -79,7 +79,7 @@ public class Main {
     	
 //    	Calculate the exam rate
     	int totalExam = 50 * noOfExam;
-    	double examRate = ((totalExamScore/totalExam) + 50) * 0.20;
+    	double examRate = ((totalExamScore/totalExam) + 50) * 0.50;
     	
 //    	calculate the grade
     	double grade = quizRate + performanceRate + examRate;
