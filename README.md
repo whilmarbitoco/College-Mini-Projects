@@ -1,2 +1,2 @@
 # College-Mini-Projects
-This the repo for the list of project that I will do in my college years
+This is the repo for the list of projects that I will do in my college years
