@@ -70,10 +70,10 @@ public class Main {
     			}
     			System.out.println ("Enter Name of Member: ");
     			name = scann.next();
-    			System.out.println("Enter Age of Member: ");
+    			System.out.println("Enter Age of "+name+": ");
     			age = scann.nextInt();
     			do {
-        			System.out.println("Enter Gender of Member [1]Male or [2]Female: ");
+        			System.out.println("Enter Gender of "+name+" [1]Male or [2]Female: ");
     				gender = setGender(scann.nextInt());
     			} while (gender.equals(""));
     			Family newFamily = new Family(name, age, gender);
