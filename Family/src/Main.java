@@ -3,6 +3,23 @@ import java.util.Scanner;
 
 
 public class Main {
+	
+	 static String setGender(int choice) {
+		 String gender = "";
+			switch (choice) {
+			case 1: 
+				gender = "Male";
+				break;
+			case 2:
+				gender = "Female";
+				break;
+			default:
+				System.out.println("Please choice between 1 and 2");
+			
+			}
+		
+		return gender;
+	}
 
     
     public static void main (String[] args) {
@@ -55,8 +72,10 @@ public class Main {
     			name = scann.next();
     			System.out.println("Enter Age of Member: ");
     			age = scann.nextInt();
-    			System.out.println("Enter Gender of Member: ");
-    			gender = scann.next();
+    			do {
+        			System.out.println("Enter Gender of Member [1]Male or [2]Female: ");
+    				gender = setGender(scann.nextInt());
+    			} while (gender.equals(""));
     			Family newFamily = new Family(name, age, gender);
     			familymodel.addMember(index, newFamily);
     			index++;
@@ -73,8 +92,10 @@ public class Main {
         			name = scann.next();
         			System.out.println("Enter Age you wanna replace with: ");
         			age = scann.nextInt();
-        			System.out.println("Enter Gender you wanna replace with: ");
-        			gender = scann.next();
+        			do {
+        				System.out.println("Enter Gender you wanna replace with [1]Male or [2]Female: ");
+            			gender = setGender(scann.nextInt());
+        			} while(gender.equals(""));
         			Family editFamily = new Family(name, age, gender);
         			familymodel.addMember(indexFound, editFamily);
     				System.out.println ("Record has been successfully updated!");
